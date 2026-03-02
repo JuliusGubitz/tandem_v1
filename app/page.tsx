@@ -9,9 +9,11 @@ import { FAQSection } from "@/components/faq-section"
 import { BookingSection } from "@/components/booking-section"
 import { Footer } from "@/components/footer"
 import { AltitudeTracker } from "@/components/altitude-tracker"
+import { PasswordGate } from "@/components/password-gate"
 
 export default function Home() {
   return (
+    <PasswordGate>
     <main className="relative">
       <Navbar />
       <AltitudeTracker />
@@ -45,5 +47,6 @@ export default function Home() {
 
       <Footer />
     </main>
+    </PasswordGate>
   )
 }
